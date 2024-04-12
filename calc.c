@@ -1,19 +1,13 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int sum()
+int sum(int a, int b);
 
-int main()
-{
-    sum()
+int main() {
+    int result = sum(5, 7);
+    printf("The sum is: %d\n", result);
     return 0;
 }
-int sum()
-{   int a,b;
-    printf("enter number 1 to innput");
-    scanf("%d",&a);
-    printf("enter number 2 to innput");
-    scanf("%d",&b);
-    sum=a+b;
-    printf("%d",sum);
 
+int sum(int a, int b) {
+    return a + b;
 }
